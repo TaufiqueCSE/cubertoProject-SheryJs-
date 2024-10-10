@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 45px;
+}
+nav img{
+    width: 100px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-item a{
+    color: rgba(0, 0, 0, 0.763);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.nav-item i{
+    margin-top: 2px;
+    display: inline-block;
+}
+
+#homeMain{
+    padding: 11vw 15vw;
+    color: black;
+}
+#homeMain h5{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+#homeMain .heading{
+    display: flex;
+    gap: 20px;
+}
+#homeMain .heading h1{
+    font-size: 6.5vw;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 1.4px rgba(0, 0, 0, 0.872);
+    letter-spacing: -2px;
+}
+#homeMain .heading h1:hover{
+    color: black;
+}
+.homeDesc{
+    padding-left: 15vw;
+}
+.homeDesc p{
+    margin-top: 2rem;
+    letter-spacing: -1.5px;
+    font-size: 2.1vw;
+    font-weight: 400;
+    width: 55%;
+}
+.homeDesc p::selection{
+    color: white;
+    background-color: black;
+}
+
+/* featured css  */
+#featured{
+    padding: 13vw 15vw;
+}
+#featured .feature-heading h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+    font-size: 3.8vw;
+    line-height: 1.1;
+}
+#featured .feature-heading h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+#featured-images{
+    margin-top: 7vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.featured-images-left{
+    width: 43%;
+    height: 100%;
+    overflow: hidden;
+}
+.featured-images-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.featured-images-right .imagess{
+    height: 90%;
+    width: 90%;
+}
+.featured-images-right .imagess img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.f-l-elem{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f-l-elem h3{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    font-weight: 700;
+}
+.f-l-elem h1{
+    font-size: 2.2vw;
+    line-height: 1.2;
+    margin-bottom: 1.1rem;
+    font-family: 500;
+}
+.f-l-elem h5{
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* //btn  */
+.btndiv{
+    padding-block: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btndiv button{
+    padding: 0.8em 2em;
+    font-weight: 600;
+    font-size:1.2vw;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px solid #888888bd;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.btndiv button:hover{
+    background-color: black;
+    color: white;
+}
+
+.devlopment{
+    width: 100%;
+    padding: 0vw 15vw;
+    margin-top: -1rem;
+    padding-bottom: 5vw;
+}
+.devlopment h1{
+    width: 60%;
+    font-size: 4.1vw;
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+.devlopment p{
+    width: 60%;
+    font-size: 1.45vw;
+    opacity: 0.8;
+}
+
+/* slider css  */
+.slider{
+    padding-inline: 9vw;
+    width: 100%;
+    padding-block: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider .slide{
+    width: 32%;
+    height: 20rem;
+}
+.slide .imgg{
+    width: 100%;
+    height: 12rem;
+    background-color: yellow;
+    overflow: hidden;
+}
+.slide .imgg:hover img{
+    transform: scale(1.2);
+}
+
+.slide .imgg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.slide .tag{
+    padding: 0.5em 1.2em;
+    background-color: rgba(248, 248, 248, 0.927);
+    color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+    margin-block: 1.3rem;
+    width: fit-content;
+    font-size: 0.86rem;
+}
+.slide .desc{
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.9;
+}
+
+/* inspire css  */
+.inspire{
+    padding: 4vw 15vw;
+    padding-right: 45px;
+
+}
+.inspire h1{
+    font-size: 4rem;
+    font-weight: 100;
+    width: 40%;
+    line-height: 1;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.inspire h1:hover{
+   opacity: 0.7;
+}
+/* slider 2  */
+.slider2{
+    width: 100%;
+    /* height: 10rem; */
+    /* background-color: green; */
+    margin-top: 7vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.slider2 .slide{
+    width: 22.5%;
+}
+.slider2 .slide .img{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+.slider2 .slide .img:hover img{
+    transform: scale(1.2);
+}
+.slider2 .slide .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.slider2 .slide .title{
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+.slider2 .slide h3{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    font-weight: 100;
+}
+
+
+._canvas_container{
+    z-index: 99999999;
+}
